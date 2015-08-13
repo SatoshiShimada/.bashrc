@@ -5,6 +5,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+HISTSIZE=1000
+HISTFILESIZE=3000
+
+shopt -s checkwinsize
+
 #PS1='[\u@\h \W]\$ '
 PS1='[\W]\$ '
 #PS1='\$ '
