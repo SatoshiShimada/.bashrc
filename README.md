@@ -9,3 +9,5 @@ Bash shell config file
 GNU bash
 
 version 4.3.33
+
+for ubuntu, archlinux, gentoo, etc.
