@@ -30,16 +30,18 @@ alias up='cd ../'
 
 jj () {
 	if [ $1 ]; then
-		count=$(find ./ -maxdepth 1 -type d | grep $1 | wc -l)
+		dir_list=$(find ./ -maxdepth 1 -type d | grep $1)
+		count=$(echo $dir_list | sed -e 's/ /\n/g' | grep -c "")
 		if [ $count -ne 1 ]; then
-			find ./ -maxdepth 1 -type d | grep $1 | sort
+			echo 'searched:'
+			echo $dir_list
 		else
-			JUMPDIR=$(find ./ -maxdepth 1 -type d | grep $1 | tail -1)
-			if [[ -d $JUMPDIR && -n $JUMPDIR ]]; then
-				cd $JUMPDIR
+			if [[ -d $dir_list && -n $dir_list ]]; then
+				cd $dir_list
 			else
-				echo "directory not found"
+				echo 'directory not found'
 			fi
 		fi
 	fi
 }
+
