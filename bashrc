@@ -16,7 +16,7 @@ PS1='[\W]\$ '
 
 alias ls='ls --color=auto'
 alias l='\ls -F'
-alias ll='ls -alF --color=auto'
+alias ll='ls -alhF --color=auto'
 
 # do not output the trailing newline &
 # enable interpretation of backslash escapes
