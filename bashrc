@@ -45,3 +45,9 @@ jj () {
 	fi
 }
 
+# for V-REP simulator
+export LIBOVERLAY_SCROLLBAR=0
+
+# setting for auto completion of git branch name
+source $HOME/.git-completion.bash
+
