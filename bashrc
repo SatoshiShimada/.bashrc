@@ -27,6 +27,7 @@ alias vi='vim'
 alias emacs='emacs -nw'
 
 alias up='cd ../'
+alias mm='vi ~/diary/$(date "+%Y/%m/%d.md")'
 
 jj () {
 	if [ $1 ]; then
