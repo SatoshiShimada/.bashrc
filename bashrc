@@ -20,7 +20,7 @@ alias ll='ls -alhF --color=auto'
 
 # do not output the trailing newline &
 # enable interpretation of backslash escapes
-alias echo="echo -ne"
+alias echo='echo -ne'
 alias grep='grep --color=auto'
 alias egrep='grep -E --color=auto'
 alias vi='vim'
